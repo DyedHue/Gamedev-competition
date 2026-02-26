@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b8n3wuqkjbyri"]
+
+[ext_resource type="PackedScene" uid="uid://b262lh50l2281" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://csr3xbcn63qxw" path="res://scripts/player.gd" id="2_lnu2h"]
+[ext_resource type="Script" uid="uid://bvqsdr2hy8c4n" path="res://scripts/logic_manager.gd" id="3_lbhrr"]
+
+[node name="Game" type="Node2D" unique_id=1544222149]
+
+[node name="Player" parent="." unique_id=1440685661 instance=ExtResource("1_uwrxv")]
+script = ExtResource("2_lnu2h")
+WALK_SPEED = null
+RUN_SPEED = null
+JUMP_VEL = null
+WALL_JUMP_SPEED = null
+MAX_JUMP_DURATION = null
+MAX_AIR_JUMP_DURATION = null
+MAX_WALL_JUMP_DURATION = null
+MAX_WALL_JUMP_BACK_DUR = null
+MAX_AIR_JUMP_CHARGE = null
+GRAVITY = null
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1660706876]
+anchor_mode = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player" unique_id=1784685403]
+
+[node name="UI" type="Node2D" parent="Player/CanvasLayer" unique_id=1535909649]
+
+[node name="LogicManager" type="Node2D" parent="." unique_id=448300941]
+script = ExtResource("3_lbhrr")
