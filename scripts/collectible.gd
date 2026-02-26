@@ -1,3 +1,5 @@
+# ashir comment
+
 extends Area2D
 
 signal collected
