@@ -1,5 +1,3 @@
-#adiat testing
-
 extends CharacterBody2D
 
 enum HorizontalState { NONE, WALK, RUN }
